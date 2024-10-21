@@ -1,0 +1,123 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #d1cfd4, #69aaeba9); /* Gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container for the form */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Form container */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-image: url('./moroccan-flower.png'); /* Optional background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Form header */
+h2 {
+  text-align: center;
+  color: #474545;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Label */
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input fields */
+input, select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+/* Input hover and focus effect */
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error message styling */
+.error {
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Button container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+/* Register button */
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Cancel button */
+button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+}
